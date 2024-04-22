@@ -1,0 +1,28 @@
+.page-not-found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-not-found h1{
+    text-align: center;
+}
+canvas{
+    border: 2px white solid;
+    width: 60vw;
+    height: auto;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.center div{
+    justify-content: center;
+}
+.restart.button{
+    text-align: center;
+    padding: 15px 30px;
+    background-color: gray;
+    border-radius: 5px;
+}

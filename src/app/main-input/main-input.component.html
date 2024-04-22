@@ -1,0 +1,23 @@
+<form
+novalidate 
+class="main-input"
+>
+
+    <div 
+    (click)="focus(inputField)" 
+    class="main-input-label"  
+    *ngIf="label"
+    >
+        {{label}}
+    </div>
+    
+    <input 
+    [ngModel]="value" 
+    (ngModelChange)="onValueChange($event)"  
+    [ngModelOptions]="{ standalone: true }"
+    #inputField 
+    type="text" 
+    placeholder="{{placeholder}}"
+    required 
+    />
+</form>

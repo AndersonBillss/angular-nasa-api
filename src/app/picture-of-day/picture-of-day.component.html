@@ -1,0 +1,48 @@
+
+<div class="main-picture">
+    <div #mainElement *ngIf="!isLoading && data" class="fade-out">
+        <img class="imgToLoad" (load)="fadeIn(mainElement)" src={{data.url}} />
+        <div>
+            <h1>
+                Picture of the day
+            </h1>
+        </div>
+    </div>
+    <div class="loading" *ngIf="isLoading || !data">
+        <app-loading-spinner />
+    </div>
+</div>
+
+
+<div class="date-input-container">
+    <h2>Enter a Date</h2>
+    <p>Get NASA's picture of the day for a specific date</p>
+    <div class="inputs">
+
+        <app-main-input 
+        [label]="'Month'"
+        [placeholder]=placeholderMonth
+        [(value)]="month"
+        ></app-main-input>
+
+        <app-main-input 
+        [label]="'Day'"
+        [placeholder]=placeholderDay
+        [(value)]="day"
+        >
+        </app-main-input>
+
+        <app-main-input 
+        [label]="'Year'"
+        [placeholder]=placeholderYear
+        [(value)]="year"
+        >
+        </app-main-input>
+        
+    </div>
+
+    <div *ngIf="month && day && year" (click)="getImgOfDay(month, day, year)" class="submit button">Submit</div>
+    <div *ngIf="!(month && day && year)" class="submit button disabled">Submit</div>
+</div>
+
+

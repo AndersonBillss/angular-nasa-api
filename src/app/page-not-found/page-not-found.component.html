@@ -1,0 +1,13 @@
+<div class="page-not-found">
+    <h1>Page Not Found</h1>
+
+    <div>
+        <canvas #gameElement width="800" height="500"></canvas>
+        <h1>lives: {{lives}}</h1>
+    </div>
+    <div *ngIf="lives < 1">
+        <h1>Game Over</h1>
+        <div (click)="restartGame()" class="restart button">Restart</div>
+    </div>
+
+</div>
