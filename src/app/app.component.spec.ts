@@ -14,10 +14,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'mapping-project' title`, () => {
+  it(`should have the 'angular-nasa-api' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mapping-project');
+    expect(app.title).toEqual('angular-nasa-api');
   });
 
   it('should render title', () => {

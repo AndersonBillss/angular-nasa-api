@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mapping-project:build:production"
+              "buildTarget": "angular-nasa-api:build:production"
             },
             "development": {
-              "buildTarget": "mapping-project:build:development"
+              "buildTarget": "angular-nasa-api:build:development"
             }
           },
           "defaultConfiguration": "development"

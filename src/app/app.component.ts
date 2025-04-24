@@ -13,7 +13,7 @@ import { PictureOfDayComponent } from './picture-of-day/picture-of-day.component
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  title = 'mapping-project';
+  title = 'angular-nasa-api';
 
   ngOnInit(){
 
